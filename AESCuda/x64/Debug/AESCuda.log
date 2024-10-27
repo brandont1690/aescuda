@@ -1,0 +1,56 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\Brandon\source\repos\AESCuda\AESCuda>"..\..\..\..\..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_75,code=\"sm_75,compute_75\" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\bin\HostX64\x64" -x cu -rdc=true  -I"..\..\..\..\..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"..\..\..\..\..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "C:\Users\Brandon\source\repos\AESCuda\AESCuda\kernel.cu" 
+  crt/device_functions.h is an internal header file and must not be used directly.  Please use cuda_runtime_api.h or cuda_runtime.h instead.
+  crt/device_functions.h is an internal header file and must not be used directly.  Please use cuda_runtime_api.h or cuda_runtime.h instead.
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\testCudaEncrypt.cuh(125): warning #1444-D: function "cudaDeviceSynchronize"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include\cuda_device_runtime_api.h(137): here was declared deprecated ("Use of cudaDeviceSynchronize from device code is deprecated and will not be supported in a future release. Disable this warning with -D__CDPRT_SUPPRESS_SYNC_DEPRECATION_WARNING.")
+  
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\testCudaEncrypt.cuh(182): warning #177-D: variable "element" was declared but never referenced
+  
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\decrypt.h(125): warning #177-D: variable "numberOfRounds" was declared but never referenced
+  
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\decrypt.cuh(212): warning #177-D: variable "isFirstChunk" was declared but never referenced
+  
+  crt/device_functions.h is an internal header file and must not be used directly.  Please use cuda_runtime_api.h or cuda_runtime.h instead.
+  crt/device_functions.h is an internal header file and must not be used directly.  Please use cuda_runtime_api.h or cuda_runtime.h instead.
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\testCudaEncrypt.cuh(125): warning #1444-D: function "cudaDeviceSynchronize"
+  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include\cuda_device_runtime_api.h(137): here was declared deprecated ("Use of cudaDeviceSynchronize from device code is deprecated and will not be supported in a future release. Disable this warning with -D__CDPRT_SUPPRESS_SYNC_DEPRECATION_WARNING.")
+  
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\testCudaEncrypt.cuh(182): warning #177-D: variable "element" was declared but never referenced
+  
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\decrypt.h(125): warning #177-D: variable "numberOfRounds" was declared but never referenced
+  
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\decrypt.cuh(212): warning #177-D: variable "isFirstChunk" was declared but never referenced
+  
+  kernel.cu
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\encrypt.h(241): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\encrypt.cuh(215): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  crt/device_functions.h is an internal header file and must not be used directly.  Please use cuda_runtime_api.h or cuda_runtime.h instead.
+  crt/device_functions.h is an internal header file and must not be used directly.  Please use cuda_runtime_api.h or cuda_runtime.h instead.
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\testCudaEncrypt.cuh(326): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\decrypt.h(198): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\decrypt.cuh(234): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\decrypt.cuh(236): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\kernel.cu(56): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+C:\Users\Brandon\source\repos\AESCuda\AESCuda\kernel.cu(57): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+  
+  C:\Users\Brandon\source\repos\AESCuda\AESCuda>"..\..\..\..\..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -dlink -o x64\Debug\AESCuda.device-link.obj -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc143.pdb /Zi /RTC1 /MDd " -L"..\..\..\..\..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin/crt" -L"..\..\..\..\..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib\x64" cudadevrt.lib cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib cudart.lib  -gencode=arch=compute_75,code=sm_75 -gencode=arch=compute_52,code=sm_52 -G --machine 64 x64\Debug\kernel.cu.obj 
+  cudadevrt.lib
+  cudart_static.lib
+  kernel32.lib
+  user32.lib
+  gdi32.lib
+  winspool.lib
+  comdlg32.lib
+  advapi32.lib
+  shell32.lib
+  ole32.lib
+  oleaut32.lib
+  uuid.lib
+  odbc32.lib
+  odbccp32.lib
+  cudart.lib
+  kernel.cu.obj
+     Creating library C:\Users\Brandon\source\repos\AESCuda\x64\Debug\AESCuda.lib and object C:\Users\Brandon\source\repos\AESCuda\x64\Debug\AESCuda.exp
+  AESCuda.vcxproj -> C:\Users\Brandon\source\repos\AESCuda\x64\Debug\AESCuda.exe
